@@ -26,3 +26,30 @@
 .card:not(:nth-child(3n)) {
     margin-right: 15px;
 }
+
+
+/* сброс отступов */ /* Ширина блока с полями */
+html {
+    box-sizing: border-box; /* Ширина блока с полями что можно было задавать значения паддингов не боясь что они увеличат блок*/
+}
+/* вносим все наследования от html border-box по умолчанию: inherit */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    /* убираем нижнее подчеркивание у ссылок */
+    color: inherit;
+    text-decoration: none;   
+}
+
+/* Всем картинкам задаем 100% ширину что бы не было полосы прокрутки  */
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'font', sans-serif;
+}
